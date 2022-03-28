@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-nav .brandname {
+  cursor: pointer;
+}
+
+.navbar-item {
+  color: var(--black-color);
+}
+
+.search-bar > input {
+  max-width: 15vw;
+  border-radius: 5rem;
+  border: none;
+}
+
+.right-nav > li > .navbar-item {
+  color: var(--black-color);
+}
+
+.right-nav > li:hover,
+.right-nav > li > .navbar-item:hover,
+.onhover:hover {
+  color: var(--hover-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .right-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar-item {
+    display: none;
+  }
+}
