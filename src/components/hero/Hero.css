@@ -1,0 +1,58 @@
+.hero-section {
+  display: flex;
+  margin: 1rem 0;
+  position: relative;
+  justify-content: center;
+}
+
+.hero-img img {
+  opacity: 0.6;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 50px;
+  left: 400px;
+}
+
+.hero-text .hero-heading {
+  font-weight: 500;
+  font-size: 3.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    bottom: 10px;
+    left: 90px;
+  }
+
+  .hero-text .hero-heading {
+    font-size: 1rem;
+  }
+
+  .hero-text .hero-description {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-text {
+    left: 120px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .hero-text {
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero-text {
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+  }
+}

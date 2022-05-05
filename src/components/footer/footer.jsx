@@ -8,12 +8,12 @@ export const Footer = () => {
       </h1>
       <div class="download-app-links">
         <img
-          src="/assets/google-play-badge.png"
+          src="http://127.0.0.1:5500/assets/google-play-badge.png"
           alt="Playstore app link"
           class="playstore-link"
         />
         <img
-          src="/assets/app-store-badge.png"
+          src="http://127.0.0.1:5500/assets/app-store-badge.png"
           alt="Appstore app link"
           class="appstore-link"
         />

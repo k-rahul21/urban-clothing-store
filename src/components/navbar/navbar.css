@@ -5,11 +5,14 @@
 }
 
 .left-nav .brandname {
+  font-weight: 500;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
 .navbar-item {
   color: var(--black-color);
+  margin-left: 0.2rem;
 }
 
 .search-bar > input {
@@ -23,8 +26,7 @@
 }
 
 .right-nav > li:hover,
-.right-nav > li > .navbar-item:hover,
-.onhover:hover {
+.right-nav > li > .navbar-item:hover {
   color: var(--hover-color);
 }
 
