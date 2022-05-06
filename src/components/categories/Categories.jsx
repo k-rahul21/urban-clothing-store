@@ -1,6 +1,5 @@
 import React from "react";
 import "./categories.css";
-import ShoeImg from "../../assets/shoe-cover.avif";
 
 export const Categories = () => {
   return (
