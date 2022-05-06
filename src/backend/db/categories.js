@@ -1,9 +1,5 @@
 import { v4 as uuid } from "uuid";
-import {
-  shoeCover,
-  jacketCover,
-  accessoryCover,
-} from "../../assets/categories-cover";
+import { shoeCover, jacketCover, accessoryCover } from "../../assets";
 
 /**
  * Category Database can be added here.
