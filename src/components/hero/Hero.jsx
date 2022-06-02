@@ -9,7 +9,7 @@ export const Hero = () => {
           <img
             src="https://urban-clothingg.netlify.app/assets/heroo-img.avif"
             className="responsive-img"
-            alt="hero-image"
+            alt="hero-screen"
           />
           <div className="hero-text">
             <h1 className="hero-heading heading1 l-height">
