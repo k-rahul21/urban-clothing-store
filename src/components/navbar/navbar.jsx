@@ -22,7 +22,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/home">
+          <Link to="/wishlist">
             <i className="fa fa-regular fa-heart onhover"></i>
             <span className="navbar-item onhover">Favourite</span>
           </Link>

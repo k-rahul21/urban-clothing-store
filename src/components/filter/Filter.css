@@ -1,0 +1,47 @@
+.filter-section {
+  width: 12rem;
+  border: 1px solid;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.filter-section .filter-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-section .filter-header {
+  flex-wrap: wrap;
+}
+
+.filter-header > button {
+  margin: 0;
+  padding: 0 0.2rem;
+}
+
+.filter-section .section-heading {
+  margin: 1rem 0;
+  background-color: var(--black-color);
+  padding: 0.5rem 1rem;
+}
+
+.slider-range-value {
+  flex-wrap: nowrap;
+}
+
+.slider-range-value {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.price-tag {
+  font-size: 0.8rem;
+}
+
+.filter-section .section-heading,
+.card-cta .secondary-btn .fa-shopping-cart {
+  color: var(--white-color);
+}

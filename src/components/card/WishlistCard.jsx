@@ -1,3 +1,6 @@
+import { React } from "react";
+import "./WishlistCard.css";
+
 export const WishlistCard = () => {
   return (
     <div className="horizontal-card shadow-card">

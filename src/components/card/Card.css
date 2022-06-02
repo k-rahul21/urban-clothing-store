@@ -1,0 +1,26 @@
+.products-container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.price-tag {
+  font-size: 0.8rem;
+}
+
+.products-container .card {
+  width: 12rem;
+  text-align: left;
+}
+
+.card-description .product-description {
+  color: var(--shadow-color);
+  font-size: 0.8rem;
+}
+
+.card-cta .secondary-btn .fa-shopping-cart {
+  color: var(--white-color);
+}
