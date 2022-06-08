@@ -1,30 +1,17 @@
-.filter-section {
-  width: 12rem;
-  border: 1px solid;
-  text-align: left;
-  padding: 1rem;
-  font-size: 0.8rem;
+.container-image .btn-wishlist {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  border-radius: 5rem;
 }
 
-.filter-section .filter-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.filter-section .filter-header {
-  flex-wrap: wrap;
-}
-
-.filter-header > button {
-  margin: 0;
-  padding: 0 0.2rem;
-}
-
-.filter-section .section-heading {
-  margin: 1rem 0;
-  background-color: var(--black-color);
-  padding: 0.5rem 1rem;
+.card .card-image .badge {
+  color: var(--black-color);
 }
 
 .slider-range-value {
@@ -42,7 +29,7 @@
 }
 
 .card {
-  width: 12rem;
+  width: 14rem;
   text-align: left;
 }
 
@@ -51,7 +38,6 @@
   font-size: 0.8rem;
 }
 
-.filter-section .section-heading,
 .card-cta .secondary-btn .fa-shopping-cart {
   color: var(--white-color);
 }

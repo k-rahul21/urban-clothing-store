@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { Link } from "react-router-dom";
 import "./categories.css";
 
@@ -8,10 +8,10 @@ export const Categories = () => {
       <div className="category-header">
         <h1 className="heading2">Category</h1>
         <div className="category-cta">
-          <Link to="/home">
+          <Link to="/products">
             <i className="fa-solid fa-circle-arrow-left onhover" />
           </Link>
-          <Link to="/home">
+          <Link to="/products">
             <i className="fa-solid fa-circle-arrow-right onhover" />
           </Link>
         </div>
@@ -22,7 +22,7 @@ export const Categories = () => {
             src="https://urban-clothingg.netlify.app/assets/shoes-cover.avif"
             alt="category cover"
           />
-          <Link to="/home" className="font-bold shadow-card category-name">
+          <Link to="/products" className="font-bold shadow-card category-name">
             Shoes
           </Link>
         </div>
@@ -31,7 +31,7 @@ export const Categories = () => {
             src="https://urban-clothingg.netlify.app/assets/jackets-cover.avif"
             alt="category cover"
           />
-          <Link to="/home" className="font-bold shadow-card category-name">
+          <Link to="/products" className="font-bold shadow-card category-name">
             Jackets
           </Link>
         </div>
@@ -40,7 +40,7 @@ export const Categories = () => {
             src="https://urban-clothingg.netlify.app/assets/accessories-cover.avif"
             alt="category cover"
           />
-          <Link to="/home" className="font-bold shadow-card category-name">
+          <Link to="/products" className="font-bold shadow-card category-name">
             Accessories
           </Link>
         </div>

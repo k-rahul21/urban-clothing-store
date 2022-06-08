@@ -8,8 +8,9 @@ export const Card = (props) => {
     <div className="card">
       <div className="card-image container-image">
         <img src={imgSrc} alt={title} />
-        <span className="btn-dismiss">
-          <i className="fa fa-close" />
+        <div className="badge">New</div>
+        <span className="btn-wishlist">
+          <i className="fa fa-heart" />
         </span>
       </div>
       <div className="card-description">

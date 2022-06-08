@@ -8,7 +8,7 @@ import Wishlist from "./pages/Wishlist-page/Wishlist";
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="/products" element={<ProductListing />} />
       <Route path="/wishlist" element={<Wishlist />} />
     </Routes>

@@ -12,6 +12,17 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  height: 800px;
+  width: auto;
+  overflow-y: scroll;
+}
+
+.product-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.product-container::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
 }
 
 @media only screen and (max-width: 600px) {

@@ -59,7 +59,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    title: "WestSide",
+    title: "Westside",
     imgSrc: shoe3,
     subtitle: "Multi-Piece Trainers",
     brand: "Westside",
@@ -155,7 +155,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    title: "WestSide",
+    title: "Westside",
     imgSrc: jacket3,
     subtitle: "Contrast Patch Jacket",
     brand: "Westside",
@@ -251,7 +251,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    title: "WestSide",
+    title: "Westside",
     imgSrc: accessory3,
     subtitle: "Tie with insects",
     brand: "Westside",

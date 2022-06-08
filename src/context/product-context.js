@@ -1,6 +1,5 @@
 import axios from "axios";
 import { createContext, useEffect, useState, useContext } from "react";
-// import { useContext } from "react/cjs/react.production.min";
 
 const ProductContext = createContext({});
 
@@ -11,7 +10,6 @@ const ProductProvider = ({ children }) => {
     (async () => {
       try {
         const productsData = await axios.get("/api/products");
-        console.log(productsData);
         if (productsData.status === 200)
           setAvailableProducts(productsData.data.products);
       } catch (error) {
