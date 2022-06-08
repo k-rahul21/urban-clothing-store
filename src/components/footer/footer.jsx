@@ -1,24 +1,21 @@
 import "./footer.css";
+import { iosBadge, androidBadge } from "../../assets";
 
 export const Footer = () => {
   return (
-    <footer class="footer-section">
+    <footer className="footer-section">
       <h1 class="heading3 font-bold">
         Experience Urban-Clothing app on mobile
       </h1>
-      <div class="download-app-links">
+      <div className="download-app-links">
         <img
-          src="http://127.0.0.1:5500/assets/google-play-badge.png"
+          src={androidBadge}
           alt="Playstore app link"
-          class="playstore-link"
+          className="playstore-link"
         />
-        <img
-          src="http://127.0.0.1:5500/assets/app-store-badge.png"
-          alt="Appstore app link"
-          class="appstore-link"
-        />
+        <img src={iosBadge} alt="Appstore app link" class="appstore-link" />
       </div>
-      <h4 class="origin">INDIA</h4>
+      <h4 className="origin">INDIA</h4>
     </footer>
   );
 };

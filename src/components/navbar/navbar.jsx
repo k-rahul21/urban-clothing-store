@@ -1,36 +1,37 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar">
-      <div class="left-nav">
-        <a href="#" class="brandname font-bold">
+    <nav className="navbar">
+      <div className="leftNav">
+        <Link to="/" className="brandname font-bold">
           Urban Clothing
-        </a>
+        </Link>
       </div>
-      <div class="mid-nav search-bar">
+      <div className="mid-nav search-bar">
         <input type="text" placeholder="Search products" />
       </div>
-      <ul class="right-nav list-non-bullet">
+      <ul className="right-nav list-non-bullet">
         <li>
-          <a href="/pages/login.html">
-            <i class="fa fa-regular fa-user onhover"></i>
-          </a>
-          <a href="/pages/login.html" class="navbar-item">
+          <Link to="/home">
+            <i className="fa fa-regular fa-user onhover"></i>
+          </Link>
+          <Link to="/home" class="navbar-item">
             Guest
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/pages/wishlist.html">
-            <i class="fa fa-regular fa-heart onhover"></i>
-            <span class="navbar-item onhover">Favourite</span>
-          </a>
+          <Link to="/wishlist">
+            <i className="fa fa-regular fa-heart onhover"></i>
+            <span className="navbar-item onhover">Favourite</span>
+          </Link>
         </li>
         <li>
-          <a href="/pages/cart.html">
-            <i class="fa fa-light fa-cart-shopping onhover"></i>
-            <span class="navbar-item onhover">Cart</span>
-          </a>
+          <Link to="/home">
+            <i className="fa fa-light fa-cart-shopping onhover"></i>
+            <span className="navbar-item onhover">Cart</span>
+          </Link>
         </li>
       </ul>
     </nav>

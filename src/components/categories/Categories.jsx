@@ -1,4 +1,5 @@
-import React from "react";
+import { React } from "react";
+import { Link } from "react-router-dom";
 import "./categories.css";
 
 export const Categories = () => {
@@ -7,47 +8,41 @@ export const Categories = () => {
       <div className="category-header">
         <h1 className="heading2">Category</h1>
         <div className="category-cta">
-          <a href="#">
+          <Link to="/products">
             <i className="fa-solid fa-circle-arrow-left onhover" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/products">
             <i className="fa-solid fa-circle-arrow-right onhover" />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="category-list">
         <div className="shoe-category category-item">
           <img
             src="https://urban-clothingg.netlify.app/assets/shoes-cover.avif"
-            alt="cover image"
+            alt="category cover"
           />
-          <a
-            href="/pages/products.html"
-            className="font-bold shadow-card category-name"
-          >
+          <Link to="/products" className="font-bold shadow-card category-name">
             Shoes
-          </a>
+          </Link>
         </div>
         <div className="jacket-category category-item">
-          <img src="https://urban-clothingg.netlify.app/assets/jackets-cover.avif" />
-          <a
-            href="/pages/products.html"
-            className="font-bold shadow-card category-name"
-          >
+          <img
+            src="https://urban-clothingg.netlify.app/assets/jackets-cover.avif"
+            alt="category cover"
+          />
+          <Link to="/products" className="font-bold shadow-card category-name">
             Jackets
-          </a>
+          </Link>
         </div>
         <div className="accessories-category category-item">
           <img
             src="https://urban-clothingg.netlify.app/assets/accessories-cover.avif"
-            alt="cover image"
+            alt="category cover"
           />
-          <a
-            href="/pages/products.html"
-            className="font-bold shadow-card category-name"
-          >
+          <Link to="/products" className="font-bold shadow-card category-name">
             Accessories
-          </a>
+          </Link>
         </div>
       </div>
     </section>

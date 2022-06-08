@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 export const Hero = () => {
@@ -9,7 +10,7 @@ export const Hero = () => {
           <img
             src="https://urban-clothingg.netlify.app/assets/heroo-img.avif"
             className="responsive-img"
-            alt="hero-image"
+            alt="hero-screen"
           />
           <div className="hero-text">
             <h1 className="hero-heading heading1 l-height">
@@ -18,7 +19,9 @@ export const Hero = () => {
             <p className="hero-description  l-height">
               Vibrant and refreshing styles to liven up your wardrobe.
             </p>
-            <button className="action-btn">Shop now</button>
+            <Link to="/products">
+              <button className="action-btn">Shop now</button>
+            </Link>
           </div>
         </div>
       </section>

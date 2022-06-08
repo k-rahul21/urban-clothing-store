@@ -1,0 +1,51 @@
+.container-image .btn-wishlist {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  border-radius: 5rem;
+}
+
+.card .card-image .badge {
+  color: var(--black-color);
+}
+
+.slider-range-value {
+  flex-wrap: nowrap;
+}
+
+.slider-range-value {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.price-tag {
+  font-size: 0.8rem;
+}
+
+.card {
+  width: 14rem;
+  text-align: left;
+}
+
+.card-description .product-description {
+  color: var(--shadow-color);
+  font-size: 0.8rem;
+}
+
+.card-cta .secondary-btn .fa-shopping-cart {
+  color: var(--white-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .product-section {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
