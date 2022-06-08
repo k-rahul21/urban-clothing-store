@@ -16,7 +16,7 @@ export const Card = (props) => {
       <div className="card-description">
         <h4 className="product-name">{title}</h4>
         <p className="product-description">{subtitle}</p>
-        <p className="product-description">{rating}⭐</p>
+        <p className="product-description product-rating">{rating}⭐</p>
         <div className="price-section">
           <h5 className="discounted-price">Rs. {discountedPrice}</h5>
           <h5 className="original-price">Rs. {originalPrice}</h5>

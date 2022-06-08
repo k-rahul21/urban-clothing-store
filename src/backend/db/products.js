@@ -43,7 +43,7 @@ export const products = [
     originalPrice: "5999",
     categoryName: "shoes",
     gender: "men",
-    rating: 4,
+    rating: 4.1,
   },
   {
     _id: uuid(),
@@ -55,7 +55,7 @@ export const products = [
     originalPrice: "7999",
     categoryName: "shoes",
     gender: "men",
-    rating: 4,
+    rating: 4.2,
   },
   {
     _id: uuid(),
@@ -67,7 +67,7 @@ export const products = [
     originalPrice: "4999",
     categoryName: "shoes",
     gender: "men",
-    rating: 3,
+    rating: 3.7,
   },
   {
     _id: uuid(),
@@ -79,7 +79,7 @@ export const products = [
     originalPrice: "6599",
     categoryName: "shoes",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -91,7 +91,7 @@ export const products = [
     originalPrice: "3999",
     categoryName: "shoes",
     gender: "men",
-    rating: 3,
+    rating: 3.1,
   },
   {
     _id: uuid(),
@@ -103,7 +103,7 @@ export const products = [
     originalPrice: "2599",
     categoryName: "shoes",
     gender: "men",
-    rating: 4,
+    rating: 4.5,
   },
   {
     _id: uuid(),
@@ -115,7 +115,7 @@ export const products = [
     originalPrice: "5999",
     categoryName: "shoes",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -127,7 +127,7 @@ export const products = [
     originalPrice: "8999",
     categoryName: "shoes",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -139,7 +139,7 @@ export const products = [
     originalPrice: "9999",
     categoryName: "jackets",
     gender: "men",
-    rating: 4,
+    rating: 4.0,
   },
   {
     _id: uuid(),
@@ -151,7 +151,7 @@ export const products = [
     originalPrice: "7999",
     categoryName: "jackets",
     gender: "men",
-    rating: 4,
+    rating: 4.1,
   },
   {
     _id: uuid(),
@@ -163,7 +163,7 @@ export const products = [
     originalPrice: "5999",
     categoryName: "jackets",
     gender: "men",
-    rating: 3,
+    rating: 3.7,
   },
   {
     _id: uuid(),
@@ -175,7 +175,7 @@ export const products = [
     originalPrice: "4999",
     categoryName: "jackets",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -187,7 +187,7 @@ export const products = [
     originalPrice: "3599",
     categoryName: "jackets",
     gender: "men",
-    rating: 3,
+    rating: 3.3,
   },
   {
     _id: uuid(),
@@ -199,7 +199,7 @@ export const products = [
     originalPrice: "8999",
     categoryName: "jackets",
     gender: "men",
-    rating: 4,
+    rating: 4.6,
   },
   {
     _id: uuid(),
@@ -211,7 +211,7 @@ export const products = [
     originalPrice: "5999",
     categoryName: "jackets",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -223,7 +223,7 @@ export const products = [
     originalPrice: "9999",
     categoryName: "jackets",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -235,7 +235,7 @@ export const products = [
     originalPrice: "5999",
     categoryName: "accessories",
     gender: "men",
-    rating: 4,
+    rating: 4.8,
   },
   {
     _id: uuid(),
@@ -247,7 +247,7 @@ export const products = [
     originalPrice: "7599",
     categoryName: "accessories",
     gender: "men",
-    rating: 4,
+    rating: 4.4,
   },
   {
     _id: uuid(),
@@ -259,7 +259,7 @@ export const products = [
     originalPrice: "799",
     categoryName: "accessories",
     gender: "men",
-    rating: 3,
+    rating: 3.7,
   },
   {
     _id: uuid(),
@@ -271,7 +271,7 @@ export const products = [
     originalPrice: "699",
     categoryName: "accessories",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -283,7 +283,7 @@ export const products = [
     originalPrice: "3599",
     categoryName: "accessories",
     gender: "men",
-    rating: 3,
+    rating: 3.0,
   },
   {
     _id: uuid(),
@@ -295,7 +295,7 @@ export const products = [
     originalPrice: "2599",
     categoryName: "accessories",
     gender: "men",
-    rating: 4,
+    rating: 4.3,
   },
   {
     _id: uuid(),
@@ -307,7 +307,7 @@ export const products = [
     originalPrice: "4599",
     categoryName: "accessories",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
   {
     _id: uuid(),
@@ -319,6 +319,6 @@ export const products = [
     originalPrice: "8599",
     categoryName: "accessories",
     gender: "men",
-    rating: 5,
+    rating: 5.0,
   },
 ];
