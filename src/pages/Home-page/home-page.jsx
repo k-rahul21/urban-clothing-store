@@ -1,8 +1,8 @@
 import "./home-page.css";
-import { Navbar } from "../../components/navbar/Navbar";
+import { Navbar } from "../../components/navbar/navbar";
 import { Hero } from "../../components/hero/Hero";
 import { Categories } from "../../components/categories/Categories";
-import { Footer } from "../../components/footer/Footer";
+import { Footer } from "../../components/footer/footer";
 
 export const HomePage = () => {
   return (
