@@ -19,7 +19,7 @@ export const Navbar = () => {
       </div>
       <ul className="right-nav list-non-bullet">
         <li className="list-item">
-          <Link to="/">
+          <Link to="/Login">
             <i className="fa fa-regular fa-user onhover"></i>
           </Link>
         </li>
