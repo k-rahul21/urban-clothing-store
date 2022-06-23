@@ -1,5 +1,5 @@
 .filter-section {
-  max-width: 60rem;
+  width: 12rem;
   border: 1px solid;
   text-align: left;
   padding: 1rem;
@@ -37,11 +37,6 @@
   flex-direction: row;
 }
 
-.price-tag {
-  font-size: 0.8rem;
-}
-
-.filter-section .section-heading,
-.card-cta .secondary-btn .fa-shopping-cart {
+.filter-section .section-heading {
   color: var(--white-color);
 }

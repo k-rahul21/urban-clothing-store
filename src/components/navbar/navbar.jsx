@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
-import { useCart } from "../../context/cart-context";
+import { useCart } from "../../context/index";
 import "./navbar.css";
 
 export const Navbar = () => {
-  const {
-    state: { cart },
-  } = useCart();
-
+  const { cartState } = useCart();
   return (
     <nav className="navbar">
       <div className="leftNav">
@@ -29,9 +26,11 @@ export const Navbar = () => {
           </Link>
         </li>
         <li className="list-item">
-          <Link to="/">
+          <Link to="/cart">
             <i className="fa fa-light fa-cart-shopping onhover"></i>
-            <span className="navbar-item onhover"> {cart.length}</span>
+            <span className="navbar-item onhover">
+              {cartState.itemsInCart.length}{" "}
+            </span>
           </Link>
         </li>
       </ul>

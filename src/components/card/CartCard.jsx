@@ -1,23 +1,44 @@
-export const CartCard = () => {
+import { useCart } from "../../context/index";
+
+const CartCard = (props) => {
+  const {
+    title,
+    subtitle,
+    discountedPrice,
+    originalPrice,
+    _id,
+    imgSrc,
+    productDescription,
+  } = props;
+
+  const { cartDispatch } = useCart();
+
   return (
-    <div className="horizontal-card shadow-card">
+    <div key={_id} className="horizontal-card shadow-card">
       <div className="card-image container-image">
-        <img src="/assets/biker-jacket.avif" alt="jacket" />
+        <img src={imgSrc} alt="jacket" />
         <span className="btn-dismiss">
-          <i className="fa fa-close" />
+          <i
+            className="fa fa-close"
+            onClick={() =>
+              cartDispatch({ type: "REMOVE_FROM_CART", payload: _id })
+            }
+          />
         </span>
       </div>
       <div className="card-description">
-        <h3 className="product-brand-name l-height">H&amp;M</h3>
-        <h5 className="product-name l-height">Black Leather Jacket</h5>
+        <h3 className="product-brand-name l-height">{title}</h3>
+        <h5 className="product-name l-height">{subtitle}</h5>
         <p className="product-description l-height">
-          Sold by: H &amp; M Retail Private Limited.
+          Sold by: {productDescription}
         </p>
         <div className="price-section">
-          <h4 className="discounted-price">Rs. 4999</h4>
-          <h4 className="original-price">Rs. 5999</h4>
+          <h4 className="discounted-price">Rs. {discountedPrice}</h4>
+          <h4 className="original-price">Rs. {originalPrice}</h4>
         </div>
       </div>
     </div>
   );
 };
+
+export { CartCard };

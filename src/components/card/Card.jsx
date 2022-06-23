@@ -1,12 +1,14 @@
 import { React } from "react";
-import { useCart } from "../../context/cart-context";
+import { useCart, useWishlist } from "../../context/index";
+import { FilterById } from "../../utils";
+import { toast } from "react-toastify";
 import "./Card.css";
+import { useNavigate } from "react-router-dom";
 
 export const Card = (props) => {
-  const {
-    state: { cart },
-    dispatch,
-  } = useCart();
+  const { cartState, cartDispatch } = useCart();
+  const { wishlistState, wishlistDispatch } = useWishlist();
+  const navigate = useNavigate();
 
   const {
     title,
@@ -15,16 +17,37 @@ export const Card = (props) => {
     originalPrice,
     imgSrc,
     rating,
-    id,
+    _id,
   } = props;
 
+  const isInCart = FilterById(_id, cartState.itemsInCart);
+
+  const cartHandler = (id, product) => {
+    cartDispatch({
+      type: "ADD_TO_CART",
+      payload: product,
+    });
+    toast.success("Added To Cart.");
+  };
+
+  const wishlistHandler = (id, product) => {
+    wishlistDispatch({
+      type: "ADD_TO_WISHLIST",
+      payload: product,
+    });
+    toast.success("Added to Wishlist.");
+  };
+
   return (
-    <div className="card">
+    <div key={_id} className="card">
       <div className="card-image container-image">
         <img src={imgSrc} alt={title} />
         <div className="badge">New</div>
         <span className="btn-wishlist">
-          <i className="fa fa-heart" />
+          <i
+            className="fa fa-heart"
+            onClick={() => wishlistHandler(_id, props)}
+          />
         </span>
       </div>
       <div className="card-description">
@@ -36,34 +59,16 @@ export const Card = (props) => {
           <h5 className="original-price">Rs. {originalPrice}</h5>
         </div>
         <div className="card-cta">
-          {cart?.some((p) => p.id === id) ? (
-            <button
-              onClick={() =>
-                dispatch({
-                  type: "REMOVE_FROM_CART",
-                  payload: props,
-                })
-              }
-              className="action-btn"
-              style={{ width: "100%" }}
-            >
-              Remove From Cart
-              <span className="btn-icon">
-                <i className="fa-regular fa-heart" />
-              </span>
-            </button>
-          ) : (
-            <button
-              onClick={() => dispatch({ type: "ADD_TO_CART", payload: props })}
-              className="secondary-btn"
-              style={{ width: "100%" }}
-            >
-              Add to Cart
-              <span className="btn-icon">
-                <i className="fa fa-shopping-cart" />
-              </span>
-            </button>
-          )}
+          <button
+            className="secondary-btn"
+            style={{ width: "100%" }}
+            onClick={() => cartHandler(_id, props)}
+          >
+            {isInCart ? "Go to cart" : "Add to Cart"}
+            <span className="btn-icon">
+              <i className="fa fa-shopping-cart" />
+            </span>
+          </button>
         </div>
       </div>
     </div>
