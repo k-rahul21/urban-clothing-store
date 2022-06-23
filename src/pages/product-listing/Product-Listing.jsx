@@ -1,9 +1,9 @@
 import { React } from "react";
 import { useProducts } from "../../context/product-context";
 import { useProductFilter } from "../../context/product-filter-context";
-import { Navbar } from "../../components/navbar/Navbar";
+import { Navbar } from "../../components/navbar/navbar";
 import { Card } from "../../components/card/Card";
-import { Footer } from "../../components/footer/Footer";
+import { Footer } from "../../components/footer/footer";
 import Filter from "../../components/filter/Filter";
 import {
   getProductsWithSelectedBrands,
@@ -61,4 +61,4 @@ const ProductListing = () => {
   );
 };
 
-export default ProductListing;
+export { ProductListing };

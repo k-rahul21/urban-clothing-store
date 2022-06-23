@@ -16,18 +16,18 @@
 }
 
 .search-bar > input {
-  max-width: 15vw;
+  max-width: 18vw;
   border-radius: 5rem;
   border: none;
 }
 
-.right-nav > li > .navbar-item {
-  color: var(--black-color);
+.right-nav {
+  display: flex;
+  flex-direction: row;
 }
 
-.right-nav > li:hover,
-.right-nav > li > .navbar-item:hover {
-  color: var(--hover-color);
+.right-nav .list-item {
+  margin-right: 0;
 }
 
 @media only screen and (max-width: 600px) {
