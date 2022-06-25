@@ -1,6 +1,9 @@
 import { React } from "react";
-import { useCart } from "../../context/index";
+import { useCart, useWishlist } from "../../context/index";
 import "./WishlistCard.css";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { FilterById } from "../../utils";
 
 export const WishlistCard = (props) => {
   const {
@@ -13,14 +16,36 @@ export const WishlistCard = (props) => {
     productDescription,
   } = props;
 
-  const { cartDispatch } = useCart();
+  const { cartState, cartDispatch } = useCart();
+  const { wishlistDispatch } = useWishlist();
+  const navigate = useNavigate();
+
+  const isInCart = FilterById(_id, cartState.itemsInCart);
+
+  const cartHandler = (product) => {
+    if (isInCart) {
+      navigate("/cart");
+    } else {
+      cartDispatch({
+        type: "ADD_TO_CART",
+        payload: product,
+      });
+      toast.success("Item successfully added to cart.");
+    }
+  };
 
   return (
     <div key={_id} className="horizontal-card shadow-card">
       <div className="card-image container-image">
         <img src={imgSrc} alt="jacket" />
         <span className="btn-dismiss">
-          <i className="fa fa-close" />
+          <i
+            className="fa fa-close"
+            onClick={() => {
+              toast.success("Item successfully removed from the wishlist.");
+              wishlistDispatch({ type: "REMOVE_FROM_WISHLIST", payload: _id });
+            }}
+          />
         </span>
       </div>
       <div className="card-description">
@@ -35,10 +60,11 @@ export const WishlistCard = (props) => {
         </div>
       </div>
       <button
+        style={{ margin: "0", width: "100%" }}
         className="secondary-btn"
-        onClick={() => cartDispatch({ type: "ADD_TO_CART", payload: _id })}
+        onClick={() => cartHandler(props)}
       >
-        MOVE TO CART
+        {isInCart ? "Go to cart" : "Add to cart"}
       </button>
     </div>
   );

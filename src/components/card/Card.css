@@ -33,6 +33,37 @@
   text-align: left;
 }
 
+.quantity-section {
+  margin: 0.5rem 0;
+}
+
+.quantity-section .decrement-btn,
+.quantity-section .increment-btn {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  font-size: 1.4rem;
+  padding: 0.1rem;
+  align-items: center;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.quantity-section > .item-qty {
+  height: 30px;
+  width: auto;
+  font-size: 1.2rem;
+  padding: 0 0.4rem;
+  margin: 0 0.5rem;
+  border: 1px solid var(--black-color);
+}
+
+.card-description .quantity-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .card-description .product-description {
   color: var(--shadow-color);
   font-size: 0.8rem;

@@ -44,6 +44,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 4.1,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -57,6 +58,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 4.2,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -70,6 +72,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 3.7,
+    qty: 1,
     productDescription: "Westside Retail Private Limited",
   },
   {
@@ -83,6 +86,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "H&M Retail Private Limited",
   },
   {
@@ -96,6 +100,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 3.1,
+    qty: 1,
     productDescription: "H&M Retail Private Limited",
   },
   {
@@ -109,6 +114,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 4.5,
+    qty: 1,
     productDescription: "Westside Retail Private Limited",
   },
   {
@@ -122,6 +128,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -135,6 +142,7 @@ export const products = [
     categoryName: "shoes",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -148,6 +156,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 4.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -161,6 +170,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 4.1,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -174,6 +184,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 3.7,
+    qty: 1,
     productDescription: "Westside Retail Private Limited",
   },
   {
@@ -187,6 +198,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "H&M Retail Private Limited",
   },
   {
@@ -200,6 +212,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 3.3,
+    qty: 1,
     productDescription: "H&M Retail Private Limited",
   },
   {
@@ -213,6 +226,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 4.6,
+    qty: 1,
     productDescription: "Westside Retail Private Limited",
   },
 
@@ -227,6 +241,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -240,6 +255,7 @@ export const products = [
     categoryName: "jackets",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -253,6 +269,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 4.8,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -266,6 +283,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 4.4,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -279,6 +297,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 3.7,
+    qty: 1,
     productDescription: "Westside Retail Private Limited",
   },
   {
@@ -292,6 +311,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "H&M Retail Private Limited",
   },
   {
@@ -305,6 +325,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 3.0,
+    qty: 1,
     productDescription: "H&M Retail Private Limited",
   },
   {
@@ -318,6 +339,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 4.3,
+    qty: 1,
     productDescription: "Westside Retail Private Limited",
   },
   {
@@ -331,6 +353,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
   {
@@ -344,6 +367,7 @@ export const products = [
     categoryName: "accessories",
     gender: "men",
     rating: 5.0,
+    qty: 1,
     productDescription: "Zara Retail Private Limited",
   },
 ];

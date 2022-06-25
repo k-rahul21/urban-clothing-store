@@ -1,4 +1,5 @@
 import { useCart } from "../../context/index";
+import { toast } from "react-toastify";
 
 const CartCard = (props) => {
   const {
@@ -20,9 +21,10 @@ const CartCard = (props) => {
         <span className="btn-dismiss">
           <i
             className="fa fa-close"
-            onClick={() =>
-              cartDispatch({ type: "REMOVE_FROM_CART", payload: _id })
-            }
+            onClick={() => {
+              toast.success("Removed from the Cart");
+              cartDispatch({ type: "REMOVE_FROM_CART", payload: _id });
+            }}
           />
         </span>
       </div>
@@ -35,6 +37,11 @@ const CartCard = (props) => {
         <div className="price-section">
           <h4 className="discounted-price">Rs. {discountedPrice}</h4>
           <h4 className="original-price">Rs. {originalPrice}</h4>
+        </div>
+        <div className="quantity-section">
+          <button className="increment-btn">+</button>
+          <p className="item-qty">1</p>
+          <button className="decrement-btn">-</button>
         </div>
       </div>
     </div>

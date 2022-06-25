@@ -1,6 +1,9 @@
 import iosBadge from "./badge/app-store-badge.png";
 import androidBadge from "./badge/google-play-badge.png";
 
+import emptyCart from "./empty-cart/empty-cart.png";
+import emptyWishlist from "./empty-cart/empty-wishlist.jpg";
+
 import shoe1 from "./Products/shoes/shoe1.jpg";
 import shoe2 from "./Products/shoes/shoe2.jpg";
 import shoe3 from "./Products/shoes/shoe3.jpg";
@@ -56,3 +59,4 @@ export {
 };
 
 export { iosBadge, androidBadge };
+export { emptyCart, emptyWishlist };

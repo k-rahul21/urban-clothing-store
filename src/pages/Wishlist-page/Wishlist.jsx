@@ -2,15 +2,18 @@ import { React } from "react";
 import { Navbar } from "../../components/navbar/navbar";
 import { Footer } from "../../components/footer/footer";
 import { WishlistCard } from "../../components/card/WishlistCard";
-
+import { useWishlist } from "../../context";
+import { emptyWishlist } from "../../assets";
 import "./Wishlist.css";
 import "../Home-page/home-page.css";
-import { useWishlist } from "../../context";
+import { useNavigate } from "react-router-dom";
 
 const Wishlist = () => {
   const {
     wishlistState: { itemsInWishlist },
   } = useWishlist();
+
+  const navigate = useNavigate();
 
   return (
     <div className="container">
@@ -25,7 +28,23 @@ const Wishlist = () => {
               <WishlistCard key={item._id} {...item} />
             ))
           ) : (
-            <h2 className="message">Oops, go and shop!!</h2>
+            <div>
+              <img
+                src={emptyWishlist}
+                className="responsive-img"
+                style={{ width: "50%" }}
+              />
+              <h2 className="message">
+                Looks like you haven't made your choice yet. Go ahead & explore
+                top products.
+              </h2>
+              <button
+                className="secondary-btn"
+                onClick={() => navigate("/products")}
+              >
+                SHOP NOW
+              </button>
+            </div>
           )}
         </div>
       </div>

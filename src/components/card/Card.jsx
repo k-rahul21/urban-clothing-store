@@ -2,6 +2,7 @@ import { React } from "react";
 import { useCart, useWishlist } from "../../context/index";
 import { FilterById } from "../../utils";
 import { toast } from "react-toastify";
+
 import "./Card.css";
 import { useNavigate } from "react-router-dom";
 
@@ -27,15 +28,17 @@ export const Card = (props) => {
       type: "ADD_TO_CART",
       payload: product,
     });
-    toast.success("Added To Cart.");
+    toast.success("Item successfully added To cart.");
   };
+
+  const isInWishlist = FilterById(_id, wishlistState.itemsInWishlist);
 
   const wishlistHandler = (id, product) => {
     wishlistDispatch({
       type: "ADD_TO_WISHLIST",
       payload: product,
     });
-    toast.success("Added to Wishlist.");
+    toast.success("Item successfully added to wishlist.");
   };
 
   return (
@@ -45,6 +48,7 @@ export const Card = (props) => {
         <div className="badge">New</div>
         <span className="btn-wishlist">
           <i
+            style={{ color: isInWishlist ? "red" : "black" }}
             className="fa fa-heart"
             onClick={() => wishlistHandler(_id, props)}
           />
@@ -59,16 +63,29 @@ export const Card = (props) => {
           <h5 className="original-price">Rs. {originalPrice}</h5>
         </div>
         <div className="card-cta">
-          <button
-            className="secondary-btn"
-            style={{ width: "100%" }}
-            onClick={() => cartHandler(_id, props)}
-          >
-            {isInCart ? "Go to cart" : "Add to Cart"}
-            <span className="btn-icon">
-              <i className="fa fa-shopping-cart" />
-            </span>
-          </button>
+          {isInCart ? (
+            <button
+              className="secondary-btn"
+              style={{ width: "100%" }}
+              onClick={() => navigate("/cart")}
+            >
+              Go to cart
+              <span className="btn-icon">
+                <i className="fa fa-shopping-cart" />
+              </span>
+            </button>
+          ) : (
+            <button
+              className="secondary-btn"
+              style={{ width: "100%" }}
+              onClick={() => cartHandler(_id, props)}
+            >
+              Add to Cart
+              <span className="btn-icon">
+                <i className="fa fa-shopping-cart" />
+              </span>
+            </button>
+          )}
         </div>
       </div>
     </div>
