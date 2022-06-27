@@ -31,4 +31,8 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .product-container {
+    justify-content: center;
+  }
 }
