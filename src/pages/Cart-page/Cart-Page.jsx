@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useEffect, useState } from "react";
 import { Navbar } from "../../components/navbar/navbar";
 import { Footer } from "../../components/footer/footer";
 import { CartCard } from "../../components/card/CartCard";
@@ -19,7 +19,7 @@ const CartPage = () => {
       <Navbar />
       <div className="cart-section">
         <div className="category-header">
-          <h2 className="headind2">Welcome to your Cart</h2>
+          <h2 className="headind2">Welcome to your Cart </h2>
         </div>
         <section className="cart-block">
           {itemsInCart?.length > 0 ? (
