@@ -18,17 +18,24 @@
 }
 
 .input-box {
-  padding: 0.5rem;
-  width: 100%;
-  border-bottom: 1px solid var(--black-color);
+  background: var(--white-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.6rem 0.7rem;
+  float: left;
+  font-size: 0.8rem;
+  margin: 5px 0;
+  width: 25vw;
+  transition: 0.3s all ease;
   outline: none;
+  border-radius: 2px;
 }
 
 button {
   margin: 1rem 0 0.5rem 0;
+  max-width: 100%;
 }
 
-.forgot-password-link {
+.forgot-password-lin10 {
   margin-top: 1rem;
 }
 
@@ -57,4 +64,10 @@ a {
 
 .logout-msg {
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-form .input-box {
+    width: 80vw;
+  }
 }
