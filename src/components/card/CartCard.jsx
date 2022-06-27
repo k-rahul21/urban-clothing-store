@@ -10,6 +10,7 @@ const CartCard = (props) => {
     _id,
     imgSrc,
     productDescription,
+    qty,
   } = props;
 
   const { cartDispatch } = useCart();
@@ -39,9 +40,19 @@ const CartCard = (props) => {
           <h4 className="original-price">Rs. {originalPrice}</h4>
         </div>
         <div className="quantity-section">
-          <button className="increment-btn">+</button>
-          <p className="item-qty">1</p>
-          <button className="decrement-btn">-</button>
+          <button
+            className="increment-btn"
+            onClick={() => cartDispatch({ type: "INCREASE_QTY", payload: _id })}
+          >
+            +
+          </button>
+          <p className="item-qty">{qty}</p>
+          <button
+            className="decrement-btn"
+            onClick={() => cartDispatch({ type: "DECREASE_QTY", payload: _id })}
+          >
+            -
+          </button>
         </div>
       </div>
     </div>

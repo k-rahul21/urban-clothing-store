@@ -9,6 +9,7 @@ const CartPrice = () => {
   const [originalPrice, setOriginalPrice] = useState();
   const [discountedPrice, setDiscountedPrice] = useState();
   const [isCouponApply, setIsCouponApply] = useState(false);
+  const [quantity, setQuantity] = useState();
 
   useEffect(() => {
     setOriginalPrice(
@@ -23,6 +24,7 @@ const CartPrice = () => {
         0
       )
     );
+    setQuantity(itemsInCart.reduce((acc, curr) => acc + Number(curr.qty), 0));
   }, [itemsInCart]);
 
   const priceAfterDiscount = originalPrice - discountedPrice;
@@ -54,7 +56,7 @@ const CartPrice = () => {
           </button>
         </div>
         <div className="price-detail-section">
-          <h4>Price Details ({itemsInCart.length} Items)</h4>
+          <h4>Price Details ({quantity} Items)</h4>
           <div className="pricing-detail mrp-section">
             <h5 className="mrp">Total MRP</h5>
             <h5 className="amount">Rs. {originalPrice}</h5>
